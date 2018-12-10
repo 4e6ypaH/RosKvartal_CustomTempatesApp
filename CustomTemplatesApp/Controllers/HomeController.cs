@@ -13,6 +13,21 @@ namespace CustomTemplatesApp.Controllers
             return View();
         }
 
+        public ActionResult MyTemplate()
+        {
+            return View();
+        }
+
+        public ActionResult Delete()
+        {
+            return View();
+        }
+
+        public ActionResult Index2()
+        {
+            return View();
+        }
+
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
