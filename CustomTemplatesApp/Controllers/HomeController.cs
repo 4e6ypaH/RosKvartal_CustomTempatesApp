@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CustomTemplatesApp.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,6 +12,18 @@ namespace CustomTemplatesApp.Controllers
         public ActionResult Index()
         {
             return View();
+        }
+
+        public ActionResult Display()
+        {
+            Book book = new Book { Name = "Война и мир", Id = 1, Price = 23.8m };
+            return View(book);
+        }
+
+        public ActionResult Edit()
+        {
+            Book book = new Book { Name = "Война и мир", Id = 1, Price = 23.8m };
+            return View(book);
         }
 
         public ActionResult MyTemplate()
